@@ -1,0 +1,29 @@
+<div>
+  Dragon ball page
+</div>
+<hr>
+<section class="row">
+
+  <div class="col-12 col-sm-6">
+    <h3>Add</h3>
+  <input type="text" class="form-control" name="" id="" placeholder="name">
+  <input type="number" name="" id="" class="form-control mt-2" placeholder="Power">
+  <button class="mt-2 btn btn-primary">
+    Add
+  </button>
+  </div>
+
+  <div class="col-12 col-sm-6">
+    <h3>Listado</h3>
+    <ul>
+      @for (character of characters(); track character.id) {
+        <li>
+          {{character.name}}
+          <strong class="text-danger"> {{character.power}}</strong>
+
+        </li>
+      }
+    </ul>
+  </div>
+
+</section>
